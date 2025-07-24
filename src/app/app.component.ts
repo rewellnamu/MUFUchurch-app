@@ -22,15 +22,25 @@ import { MatIconModule } from '@angular/material/icon';
       </nav>
     </header>
     <main [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig?.path">
+    <h2 style="color: yellow; background-color: rgba(0, 0, 0, 0.5); padding: 1rem; border-radius: 5px;">Welcome to ACK MUFU Church</h2>
+
       <router-outlet #o="outlet"></router-outlet>
     </main>
+  <footer class="footer">
+    <p>&copy; 2023 ACK MUFU. All rights reserved.</p>
+    <p>Follow us on <a href="https://facebook.com/ackmufu" target="_blank">Facebook</a> | <a href="https://twitter.com/ackmufu" target="_blank">Twitter</a></p>
+    <p>Contact us at <a href="mailto:info@ackmufu.org">infoackmufu.org</a></p>
+  </footer>
   `,
   styles: [`
     .header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #2d3e50; color: white; font-family: Arial, sans-serif; }
     .logo { display: flex; align-items: center; gap: 10px; }
     nav a { margin: 0 10px; text-decoration: none; color: white; font-weight: bold; display: inline-flex; align-items: center; gap: 5px; }
     nav a.active { border-bottom: 2px solid yellow; }
-    main { padding: 2rem; background-image: url('/ACK.jpg'); background-size: cover; color: white; min-height: 100vh; }
+    .footer { text-align: center; padding: 1rem; background: #2d3e50; color: white; font-family: Arial, sans-serif; }
+    .footer a { color: yellow; text-decoration: none; }
+    
+    main { padding: 2rem; background-image: url('/ACK.jpg'); background-size: cover; color: white; min-height: 100vh;  }
   `],
   animations: [
     trigger('routeAnimations', [

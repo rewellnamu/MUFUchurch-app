@@ -8,19 +8,20 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [MatCardModule, MatButtonModule, RouterLink],
   template: `
+  <div class="hero-image" style="background-image: url('/hero.jpg'); height: 300px; background-size: cover; background-position: center;">
+    <p>Join us in worship, fellowship, and community service.</p>
+    <p>Explore our latest events, sermons, and community activities.</p>
+    <p>We are committed to spreading the love of Christ and serving our community.</p>
+    <p>Check out our upcoming events and join us for worship services.</p>
+    <p>For inquiries, please contact us via email or phone.</p>
+    <p>Thank you for visiting our church website. We look forward to seeing you!</p>
+   </div>
     <mat-card>
       <mat-card-header>
-        <mat-card-title style="color: black; font-weight: bold;">Welcome to ACK MUFU Church</mat-card-title>
+        <mat-card-title style="color: black; font-weight: bold;"></mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p style="color: black;">We are glad you are here! Join us for worship every Sunday at 10 AM.
-        <br>
-        Our mission is to share love, hope, and faith with everyone in the community.
-        <br>
-        Explore our latest sermons, upcoming events, and how you can get involved.
-        <br>
-        Together, we can make a difference in the lives of many.
-        </p>
+       
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button color="primary" [routerLink]="['/about']" routerLinkActive="router-link-active" >Join Us</button>
@@ -28,7 +29,8 @@ import { RouterLink } from '@angular/router';
     </mat-card>
   `,
   styles: [`
-    mat-card { max-width: 600px; margin: auto; display: flex; flex-direction: column; align-items: center; background-image: url('/ack4.jpg'); background-size: cover; color: white; }
+  .hero-image { padding: 2rem; text-align: center; background-color: rgba(211, 50, 50, 0.8); border-radius: 10px; }
+    mat-card { max-width: 800px; margin: auto; display: flex; flex-direction: column; align-items: center; background-image: url('/ack4.jpg'); background-size: cover; color: white; }
   `]
 })
 export class HomeComponent {}
