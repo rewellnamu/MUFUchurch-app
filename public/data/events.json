@@ -1,0 +1,10 @@
+[
+  { "title": "Sunday Worship", "date": "Every Sunday 10AM", "description": "Join us for powerful worship and the Word." },
+  { "title": "Youth Fellowship", "date": "Saturday 5PM", "description": "A time of fun and growth for the youth." },
+  { "title": "Charity Drive", "date": "August 15th", "description": "Help us support the community with donations." },
+  { "title": "Bible Study", "date": "Wednesday 7PM", "description": "Deepen your understanding of the Scriptures." },
+  { "title": "Prayer Meeting", "date": "Friday 6PM", "description": "Join us for a time of prayer and intercession." },
+  { "title": "Family Fun Day", "date": "September 10th", "description": "A day of fun activities for the whole family." },
+  { "title": "Community Outreach", "date": "October 5th", "description": "Engage with the community and share the love of Christ." },
+  { "title": "Christmas Celebration", "date": "December 25th", "description": "Celebrate the birth of Jesus with us!" }
+]
