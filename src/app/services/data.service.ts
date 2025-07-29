@@ -4,13 +4,22 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
+  private apiUrl = 'http://localhost:5000/api'; // backend URL
+
   constructor(private http: HttpClient) {}
 
-  getEvents(): Observable<any[]> {
-    return this.http.get<any[]>('data/events.json');
+  // ---- CONTACT ----
+  sendContactMessage(data: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/contact`, data);
   }
 
+  // ---- EVENTS ----
+  getEvents(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/events`);
+  }
+
+  // ---- SERMONS ----
   getSermons(): Observable<any[]> {
-    return this.http.get<any[]>('data/sermons.json');
+    return this.http.get<any[]>(`${this.apiUrl}/sermons`);
   }
 }
