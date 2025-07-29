@@ -27,7 +27,7 @@ import { CommonModule } from '@angular/common';
       <router-outlet #o="outlet"></router-outlet>
     </main>
     <footer class="footer">
-      <p>&copy; 2023 ACK MUFU. All rights reserved.</p>
+      <p>&copy; 2025 ACK MUFU. All rights reserved.</p>
       <p>Follow us on <a href="https://facebook.com/ackmufu" target="_blank">Facebook</a> | <a href="https://twitter.com/ackmufu" target="_blank">Twitter</a></p>
       <p>Contact us at <a href="mailto:info@ackmufu.org">infoackmufu.org</a></p>
     </footer>
